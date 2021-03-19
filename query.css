@@ -1,0 +1,41 @@
+@media only screen and (max-width: 425px) {
+    
+    header {
+        padding: 0 30px;
+    }
+
+    nav, .btn-login-signup {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .intro {
+        position: absolute;
+        padding: 0 30px;
+    }
+
+    .intro h1 {
+        font-size: 2.4rem;
+        line-height: 1.4;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: .5em;
+        color: white;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .intro img {
+        width: 400%;
+        left: -500px;
+    }
+
+}
