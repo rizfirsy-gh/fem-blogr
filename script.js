@@ -71,3 +71,22 @@ closeHamburgerButton.addEventListener('click', function() {
     hambergurMenu.style.display = "none";
     hamburgerButton.style.display = "block";
 });
+
+const accorProductBtn = document.querySelector(".accor-product-btn");
+const accorCompanyBtn = document.querySelector(".accor-company-btn");
+const accorConnectBtn = document.querySelector(".accor-connect-btn");
+const productPanel = document.querySelector(".product-panel");
+const companyPanel = document.querySelector(".company-panel");
+const connectPanel = document.querySelector(".connect-panel");
+
+
+
+accorProductBtn.addEventListener("click",
+() => productPanel.style.display === "flex" ? productPanel.style.display = "none" : productPanel.style.display = "flex"
+);
+accorCompanyBtn.addEventListener("click",
+() => companyPanel.style.display === "flex" ? companyPanel.style.display = "none" : companyPanel.style.display = "flex"
+);
+accorConnectBtn.addEventListener("click",
+() => connectPanel.style.display === "flex" ? connectPanel.style.display = "none" : connectPanel.style.display = "flex"
+);
