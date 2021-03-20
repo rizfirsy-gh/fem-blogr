@@ -317,7 +317,8 @@ nav {
     font-family: var(--ubuntu);
     font-weight: 500;
     padding: 1rem;
-    display: block;
+    display: inline-block;
+    width: 100%
 }
 
 .accordion-btn {
