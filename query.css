@@ -1,5 +1,4 @@
 @media only screen and (max-width: 425px) {
-    
     header {
         padding: 0 30px;
     }
@@ -13,7 +12,7 @@
     }
 
     .intro {
-        position: absolute;
+        /* position: absolute; */
         padding: 0 30px;
     }
 
@@ -38,4 +37,139 @@
         left: -500px;
     }
 
+    .design {
+        padding: 0 30px;
+        padding-top: 4rem;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "text text";
+        margin-bottom: 10em;
+    }
+
+    .design-title {
+        grid-area: title;
+    }
+
+    .design-image {
+        width: 100%;
+        height: 300px;
+        background-image: url(images/illustration-editor-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        grid-area: image;
+        display: flex;
+        justify-content: center;
+        /* border: 1px dotted red; */
+        margin: 2em 0;
+    }
+
+    .design-text {
+        grid-area: text;
+    }
+
+    .design-text h1, .design-text p {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .design-text h1 {
+        margin-bottom: 1em;
+    }
+
+    .design-text .text1 {
+        margin-bottom: 3rem;
+    }
+
+    .smartphone {
+        width: 100%;
+        height: 600px;
+        /* border: 1px dotted purple; */
+    }
+
+    .smartphone-bg {
+        height: 600px;
+
+    }
+
+    .smartphone-bg img {
+        width: 500px;
+        position: absolute;
+        left: -8%;
+        top: -10%;
+        transform: translateY(-25%);
+    }
+
+    .smartphone-content {
+        padding: 0 30px;
+
+    }
+
+    .smartphone-content img {
+        width: 300px;
+        top: -55%;
+        margin: 0 auto;
+    }
+
+    .smartphone .descriptions {
+        /* border: 1px dotted white; */
+        /* position: relative; */
+        transform: translateY(-50%);
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .laptop {
+        grid-template-areas:
+        "illo illo"
+        "text text"
+        ;
+        padding: 3rem 0;
+        padding-bottom: 6rem;
+    }
+
+    .laptop-illo {
+        grid-area: illo;
+        width: 100%;
+        height: 300px;
+        background-image: url(images/illustration-laptop-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* border: dotted 1px red; */
+        margin: 2em 0;
+
+    }
+
+    .laptop-text {
+        grid-area: text;
+        padding:0 30px;
+    }
+
+    .laptop-text h1, .laptop-text p {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .laptop-text h1 {
+        margin-bottom: 1em;
+    }
+
+    .laptop-text .text1 {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 30px;
+    }
+
+    footer img {
+        margin-bottom: 4em;
+    }
+
+    .product-footer, .company-footer {
+        margin-bottom: 3em;
+    }
 }
