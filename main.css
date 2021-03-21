@@ -26,8 +26,8 @@
     --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
     /* Fonts */
-    --overpass: 'Overpass', sans-serif;
-    --ubuntu:'Ubuntu', sans-serif;
+    --overpass: 'Overpass';
+    --ubuntu:'Ubuntu';
 
     --padding-page: 0 10rem;
 }
