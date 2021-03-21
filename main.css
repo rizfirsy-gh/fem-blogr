@@ -32,6 +32,18 @@
     --padding-page: 0 10rem;
 }
 
+@keyframes image-pulse {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -328,6 +340,11 @@ nav {
     font-weight: 500;
     padding: 1rem;
     display: block;
+}
+
+.menu .main-menu button img {
+    /* transform: rotate(180deg); */
+    transform: rotate(0deg);
 }
 
 .accordion-btn {

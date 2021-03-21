@@ -78,7 +78,9 @@ const accorConnectBtn = document.querySelector(".accor-connect-btn");
 const productPanel = document.querySelector(".product-panel");
 const companyPanel = document.querySelector(".company-panel");
 const connectPanel = document.querySelector(".connect-panel");
-
+const productArrowIcon = document.querySelector(".product-arrow");
+const companyArrowIcon = document.querySelector(".company-arrow");
+const connectArrowIcon = document.querySelector(".connect-arrow");
 
 
 accorProductBtn.addEventListener("click",
@@ -89,4 +91,18 @@ accorCompanyBtn.addEventListener("click",
 );
 accorConnectBtn.addEventListener("click",
 () => connectPanel.style.display === "flex" ? connectPanel.style.display = "none" : connectPanel.style.display = "flex"
+);
+
+
+//rotating arrow
+accorProductBtn.addEventListener("click",
+() => productPanel.style.display === "flex" ? productArrowIcon.style.transform = "rotate(180deg)" : productArrowIcon.style.transform = "rotate(0deg)"
+);
+
+accorCompanyBtn.addEventListener("click",
+() => companyPanel.style.display === "flex" ? companyArrowIcon.style.transform = "rotate(180deg)" : companyArrowIcon.style.transform = "rotate(0deg)"
+);
+
+accorConnectBtn.addEventListener("click",
+() => connectPanel.style.display === "flex" ? connectArrowIcon.style.transform = "rotate(180deg)" : connectArrowIcon.style.transform = "rotate(0deg)"
 );
