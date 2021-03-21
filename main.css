@@ -526,3 +526,8 @@ footer li {
     padding: 0;
     margin: .5em 0;
 }
+
+.attribution a {
+    font-family: var(--ubuntu);
+    color: var(--light-red);
+}

@@ -172,7 +172,25 @@
         margin-bottom: 4em;
     }
 
-    .product-footer, .company-footer {
+    footer .attribution img {
+        margin-bottom: 1em;
+    }
+
+    .product-footer, .company-footer, .connect-footer {
         margin-bottom: 3em;
+    }
+
+    .attribution {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .who {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
