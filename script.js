@@ -106,3 +106,38 @@ accorCompanyBtn.addEventListener("click",
 accorConnectBtn.addEventListener("click",
 () => connectPanel.style.display === "flex" ? connectArrowIcon.style.transform = "rotate(180deg)" : connectArrowIcon.style.transform = "rotate(0deg)"
 );
+
+ScrollReveal({delay: 5, duration: 1000});
+ScrollReveal().reveal('.logo');
+ScrollReveal().reveal('.dropbtn');
+ScrollReveal().reveal('#hamburger');
+
+ScrollReveal().reveal('.intro p');
+ScrollReveal().reveal('.intro img');
+ScrollReveal().reveal('.cta');
+ScrollReveal().reveal('.heading-intro');
+
+ScrollReveal().reveal('.design');
+ScrollReveal().reveal('.design-title');
+ScrollReveal().reveal('.design-image img');
+ScrollReveal().reveal('.text1');
+ScrollReveal().reveal('.text1 h1');
+ScrollReveal().reveal('.text1 p');
+ScrollReveal().reveal('.text2');
+ScrollReveal().reveal('.text2 h1');
+ScrollReveal().reveal('.text2 p');
+
+ScrollReveal().reveal('.smartphone-bg');
+ScrollReveal().reveal('.smartphone-bg img');
+ScrollReveal().reveal('.illo');
+ScrollReveal().reveal('.descriptions h1');
+ScrollReveal().reveal('.descriptions p');
+
+
+ScrollReveal().reveal('.laptop-illo');
+
+ScrollReveal().reveal('footer img');
+ScrollReveal().reveal('footer h1');
+ScrollReveal().reveal('footer li');
+ScrollReveal().reveal('footer a');
+
