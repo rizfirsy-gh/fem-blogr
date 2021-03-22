@@ -1,4 +1,8 @@
 @media only screen and (max-width: 425px) {
+
+    body {
+        font-size: 14px;
+    }
     header {
         padding: 0 30px;
     }
@@ -26,7 +30,7 @@
     }
 
     .intro p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 1.4;
         text-align: center;
         font-weight: 500;
@@ -44,11 +48,12 @@
         "title title"
         "image image"
         "text text";
-        margin-bottom: 10em;
+        margin-bottom: 13em;
     }
 
     .design-title {
         grid-area: title;
+        text-align: center;
     }
 
     .design-image {

@@ -272,7 +272,7 @@ nav {
     background-color: rgb(255, 255, 255);
     margin: 1em;
     /* padding-top: 50px; */
-    bottom: 0;
+    bottom: 1rem;
     /* top: 300px; */
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -360,11 +360,11 @@ nav {
 
 
 .menu .menu-cta {
-    padding: 2rem 3rem;
+    padding: 10px 30px;
     border-top: solid 1px var(--very-dark-desaturated-blue);
     font-family: var(--ubuntu);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--body-copy);
     display: flex;
     flex-direction: column;
@@ -375,9 +375,9 @@ nav {
 .menu .menu-cta .burger-login {
     font-family: var(--ubuntu);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--body-copy);
-    padding: 1rem 3rem;
+    padding: 10px 30px;
     border-radius: 100px;
     margin-bottom: 1em;
 }
@@ -385,14 +385,14 @@ nav {
 .menu .menu-cta .burger-signup {
     font-family: var(--ubuntu);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 14px-;
     color: white;
     background: linear-gradient(to right,
     var(--very-light-red),
     var(--light-red)
     );
 
-    padding: 1rem 3rem;
+    padding: 10px 30px;
     border-radius: 100px;
 }
 
