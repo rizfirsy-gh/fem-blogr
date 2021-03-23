@@ -127,8 +127,9 @@ ScrollReveal().reveal('.text2');
 ScrollReveal().reveal('.text2 h1');
 ScrollReveal().reveal('.text2 p');
 
-ScrollReveal().reveal('.smartphone-bg');
-ScrollReveal().reveal('.smartphone-bg img');
+ScrollReveal().reveal('.design-image');
+ScrollReveal().reveal('.smartphone-content h1');
+ScrollReveal().reveal('.smartphone-content p');
 ScrollReveal().reveal('.illo');
 ScrollReveal().reveal('.descriptions h1');
 ScrollReveal().reveal('.descriptions p');
