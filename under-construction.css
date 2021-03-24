@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Primary Color*/
+    --cta-text: hsl(356, 100%, 66%);
+    --cta-hover-background: hsl(355, 100%, 74%);
+    --headings: hsl(208, 49%, 24%);
+
+    /*Neutral Color*/
+    --white-text: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-bg: hsl(240, 10%, 16%);
+
+    /*Gradient Color*/
+    /*Background gradient - Intro/CTA mobile nav:*/
+    --very-light-red:  hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    
+    /* Background gradient - body: */
+    --very-dark-grey-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+    /* Fonts */
+    --overpass: 'Overpass';
+    --ubuntu:'Ubuntu';
+
+    --padding-page: 0 4rem;
+}
+
+
+@keyframes image-pulse {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--overpass);
+    color: var(--body-copy);
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--ubuntu);
+    /* font-weight: 500; */
+    color: var(--headings);
+}
+
+p {
+    text-align: center;
+    line-height: 1.4;
+    color: var(--body-copy);
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: var(--light-red);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+}
+
+.illo {
+    height: 300px;
+    width: 100%;
+    background-image: url(images/2271.jpg);
+    background-size: contain;
+    background-repeat:round;
+    background-color: rgb(230, 239, 241);
+    border-radius: 25px;
+    position: relative;
+}
+
+.illo a {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 3px;
+    right: 1rem;
+    background-color: unset;
+    padding: unset;
+}
+
+.home {
+    margin-right: 2em;
+}
+
+.home:hover {
+    background-color: hsl(353, 75%, 55%);
+}
+
+.ig {
+    color: var(--very-dark-grey-blue);
+    background-color: transparent;
+    border-bottom: solid 3px var(--very-dark-grey-blue);
+    border-radius: unset;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.ig::after {
+    content: ' ';
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    background:linear-gradient(45deg, 
+    #405de6, 
+    #5851db, 
+    #833ab4,
+    #c13584, 
+    #e1306c, 
+    #fd1d1d);
+    transform: translateY(100%);
+    transition-property: display;
+    transition-duration: 300ms;
+}
+
+.ig:hover {
+    border-bottom: none;
+    color: white;
+}
+
+.ig:hover:after {
+    display: block;
+    transform: translateY(0%);
+}
+
+@media only screen and (max-width: 768px) {
+    .illo {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        padding: 0 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .illo {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 3em;
+    }
+
+    .cta-btn {
+        position: absolute;
+        bottom: 50px;
+    }
+}

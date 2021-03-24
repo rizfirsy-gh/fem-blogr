@@ -1,4 +1,4 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
 
     body {
         font-size: 14px;
@@ -72,7 +72,7 @@
         background-image: url(images/illustration-editor-mobile.svg);
         background-size:contain;
         background-repeat: no-repeat;
-        background-position: right; 
+        background-position: center; 
         /* border: 1px dotted red; */
         order: unset;
         animation: image-pulse 2s infinite ;
